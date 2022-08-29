@@ -1,18 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import { dividerClasses } from '@mui/material';
+import { dividerClasses, Typography } from '@mui/material';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
-
-  let greetins = {saludo: 'Hola', saludo2: 'Bienvenido/a'};
-
   return (
-    <div>
+    <div style={{backgroundColor:"#F3F3F3"}}>
       <NavBar/>
-
-      <ItemListContainer item={greetins}/>
+      <ItemListContainer/>
+      <div style={{backgroundColor:"#666666"}}>
+        footer
+      </div>
     </div>
   );
 }

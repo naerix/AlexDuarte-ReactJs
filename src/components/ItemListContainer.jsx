@@ -1,10 +1,15 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
-export default function ItemListContainer({item}) {
+export default function ItemListContainer() {
+
+  const initial = 1;
+  const stock = 4;
+  const onAdd = ()=>{
+    alert("Se ha agregado al carrito")
+  };
+
   return (
-    <div>
-        <h1>{item.saludo}</h1>
-        <h2>{item.saludo2}</h2>
-        </div>
+    <ItemCount initial={initial} stock={stock} onAdd={onAdd}/>
   )
 }
