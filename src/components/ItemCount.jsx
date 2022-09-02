@@ -5,6 +5,10 @@ import { margin } from '@mui/system';
 
 
 export default function ItemCount({stock, initial, onAdd}) {
+
+
+
+
     const [contador, setContador] = useState(initial);
 
     const agregar = ()=>{
@@ -17,6 +21,7 @@ export default function ItemCount({stock, initial, onAdd}) {
             setContador(contador -1)
         }
     }
+
   return (
 
     <div>
