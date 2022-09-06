@@ -8,8 +8,9 @@ export default function ItemDetailCointainer() {
         .then(res=>res.json())
         .then(json=> setData(json))
         .catch((e)=> console.log(e))
-        .finally(()=> console.log('finalizo'));
+        .finally(()=> console.log('carga completada'));
       },[]);
+
   return (
     <div>
         <ItemDetail data={data}/>
