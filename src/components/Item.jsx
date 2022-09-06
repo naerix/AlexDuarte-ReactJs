@@ -5,9 +5,9 @@ export default function item({itemProp}) {
   return (
     <div>
         <div>
-            <img src={itemProp.img} style={{width:'100px', height:'auto'}}/>
-            <p>nombre: {itemProp.name}</p>
-            <p>precio: {itemProp.id}</p>
+            <img src={itemProp.image} style={{width:'150px', height:'auto'}}/>
+            <p> {itemProp.title}</p>
+            <p>${itemProp.price}</p>
         </div>
        
     </div>
